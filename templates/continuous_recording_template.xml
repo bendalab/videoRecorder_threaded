@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-n
+ode.org/odml"?>
+<odML version="1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2013-10-06</date>
+  <!-- ********************************************************* -->
+  <!--                    Recording section                      -->
+  <!-- ********************************************************* --> 
+  <section>
+    <type>recording</type>
+    <name>Recording</name>
+    <definition>During a recording session in a Setup Datasets are
+    obtained from Cells and/or a Subject by using various stimuli
+    (Stimulus section).</definition>
+    <property>
+      <name>Comment</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>Comments on the recording session.</definition>
+    </property>      
+    
+    <property>
+      <name>Experimenter</name>
+      <value>Frank Kirschbaum, Joerg Henninger
+	<type>person</type>
+      </value>
+      <definition>The name of the person actually performing the
+      recordings.</definition>
+    </property> 
+    
+    <property>
+      <name>StartDate</name>
+      <value>
+	<type>date</type>
+      </value>
+      <definition>The date the recording session was conducted
+      (YYYY-MM-DD format).</definition>
+    </property> 
+
+    <property>
+      <name>EndDate</name>
+      <value>
+	<type>date</type>
+      </value>
+      <definition>The date the recording session ended (YYYY-MM-DD
+      format).</definition>
+    </property> 
+  </section> 
+  <!-- ********************************************************* -->
+  <!--                  Experiment section                       -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>experiment/bahavior</type>
+    <name>Observation of Behavior</name>
+    <definition>Properties for describing an behavioural
+    experiment.</definition>
+    
+    <property>
+      <name>Task</name>
+      <value>-
+        <type>string</type> 
+      </value>
+    </property>
+    
+    <property>
+      <name>IndividualCount</name>
+      <value>1
+      <type>int</type> 
+      </value>
+      <definition>The number of individuals that are
+      observed/investigated at the same time.</definition>
+    </property>
+    
+    <property>
+      <name>definition</name>
+      <value>
+        <type>text</type> 
+
+      </value>
+      <definition>A definition of the conducted experiment.</definition>
+    </property>
+  </section>
+  <!-- ********************************************************* -->
+  <!--                      Setup section                        -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>setup</type>
+    <name>Fish tank at Kirschbaum Lab</name>
+    
+    <property>
+      <name>Description</name>
+      <value>
+	<type>text</type>
+      </value>
+      <definition>A textual description of the setup.</definition>
+    </property>
+    
+    <property>
+      <name>Location</name>
+      <value> Kirschbaum Lab, HU Berlin
+      <type>string</type>
+      </value>
+      <definition>The location of the setup (e.g. room).</definition>
+    </property> 
+    
+    <property>
+      <name>Department</name>
+      <value>Abteilung Neuroethologie
+      <type>string</type>
+      </value>
+      <definition>The department where the setup is
+      located.</definition>
+    </property>
+
+    <property>
+      <name>Creator</name>
+      <value>
+            Frank Kirschbaum, Joerg Henninger, Jan Benda
+	<type>string</type>
+      </value>
+      <definition>The person who built the setup.</definition>
+    </property> 
+    
+    <property>
+      <name>Maintainer</name>
+      <value>
+        Joerg Henninger
+	<type>person</type>
+      </value>
+      <definition>The person who is responsible for the setup
+      maintanance.</definition>
+    </property> 
+    
+    <property>
+      <name>Config</name>
+      <value>
+      <type>string</type>
+      </value>
+      <definition>An identifier of the used setup
+      configuration, e.g. if variations of the same setup are
+      used.</definition>
+    </property> 
+  </section>
+  <!-- ********************************************************* -->
+  <!--                      Subject section                      -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>subject</type>
+    <name>Subject</name>
+    <definition>The investigated experimental subject (animal or
+    person). May contain the Cell and Preparation sections as
+    subsections.</definition>
+    
+    <property>
+      <name>Subject id</name>
+      <value>
+	<type>string</type>
+      </value>
+    </property>
+    
+    <property>
+      <name>Species</name>
+      <value>Apteronotus leptorhychus / rostratus
+      <type>string</type>
+      </value>
+      <definition>The scientific name of the species e.g. Apis
+      mellifera, Homo sapiens.</definition>
+    </property> 
+     
+    <property>
+      <name>TrivialName</name>
+      <value>Brown ghost knife fish
+      <type>string</type>
+      </value>
+      <definition>The trivial name of the species like
+      Honeybee, Human.</definition>
+    </property> 
+
+    <property>
+      <name>-</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>The tank in which the subject is housed.</definition>
+    </property>
+
+    <property>
+      <name>Comment</name>
+      <value>
+	<type>text</type>
+      </value>
+      <definition>A general comment on a specific
+      subject. </definition>
+    </property>
+  </section> 
+
+</odML>
